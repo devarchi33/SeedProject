@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<settings>
+		<setting name="cacheEnabled" value="true" />
+		<setting name="lazyLoadingEnabled" value="true" />
+		<setting name="multipleResultSetsEnabled" value="true" />
+	</settings>
+	
+	<!-- typeAliases>
+		<typeAlias type="com.skyfly33.shoppingmall.util.CommonMap" alias="nice" /-->		<!-- DTO를 대신할 MAP선언 -->
+	<!-- /typeAliases-->
+	
+	<typeAliases>
+		<typeAlias type="com.skyfly33.shop.domain.Item" alias="item" />	
+	</typeAliases>
+
+	<!-- typeHandlers>
+		<typeHandler
+			handler="com.iruentech.licensemanager.persistence.typehandler.EmailTypeHandler" />
+		<typeHandler
+			handler="com.iruentech.licensemanager.persistence.typehandler.PhoneTypeHandler" />
+	</typeHandlers-->
+
+	<mappers>		
+		<!-- Item -->
+		<mapper resource="META-INF/mappers/ItemDao.xml"/>
+	</mappers>
+
+</configuration>
