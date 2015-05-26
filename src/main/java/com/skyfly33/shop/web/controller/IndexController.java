@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.skyfly33.shop.domain.Item;
+import com.skyfly33.shop.util.LoggingUtil;
 import com.skyfly33.shop.web.service.Shop;
 
 /**
@@ -23,7 +24,7 @@ import com.skyfly33.shop.web.service.Shop;
  */
 @Controller
 public class IndexController {
-	
+
 	@Autowired
 	private Shop shopService;
 
@@ -34,9 +35,13 @@ public class IndexController {
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String home(HttpServletRequest request, HttpServletResponse response, Model model) {
+	public String home(HttpServletRequest request,
+			HttpServletResponse response, Model model) {
+
 		// 상품 목록 정보 취득
 		List<Item> itemList = this.shopService.getItemList();
+		
+		LoggingUtil.logging(logger, itemList);
 
 		// 모델 생성
 		model.addAttribute("itemList", itemList);

@@ -20,6 +20,14 @@
 		item_id, item_name, price ,description, picture_url 
 		FROM item
 	</select>
+	
+	<!-- 개별 상품 조회 -->
+	<select id="itemListSelectById" resultMap="itemResult" parameterType="int">
+		SELECT
+		item_id, item_name, price, description, picture_url
+		FROM item
+		WHERE item_id = #{item_id}
+	</select>
 
 </mapper>
   

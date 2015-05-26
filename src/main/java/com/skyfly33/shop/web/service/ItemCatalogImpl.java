@@ -20,4 +20,10 @@ public class ItemCatalogImpl implements ItemCatalog {
 		return this.itemDao.itemListSelect();
 	}
 
+	@Override
+	public Item getItemListById(int item_id) {
+		// TODO Auto-generated method stub
+		return this.itemDao.itemListSelectById(item_id);
+	}
+
 }

@@ -10,4 +10,6 @@ import com.skyfly33.shop.domain.Item;
 public interface Shop {
 
 	List<Item> getItemList();
+	
+	Item getItemListById(int item_id);
 }

@@ -19,4 +19,10 @@ public class ShopImpl implements Shop{
 		return this.itemCatalog.getItemList();
 	}
 
+	@Override
+	public Item getItemListById(int item_id) {
+		// TODO Auto-generated method stub
+		return this.itemCatalog.getItemListById(item_id);
+	}
+
 }

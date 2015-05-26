@@ -1,19 +1,19 @@
 body {
-	font-family: ±¼¸²Ã¼
+    font-family: ±¼¸²Ã¼
 }
 
-div.body {
+div.body{
 	overflow-y: auto;
-	scrollbar-face-color: #C9BFED;
-	scrollbar-shadow-color: #EDEDED;
+    scrollbar-face-color: #C9BFED;
+    scrollbar-shadow-color: #EDEDED;
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
 
-tr.header {
-	background: #C9BFED;
+tr.header{
+    background: #C9BFED;
 }
 
-tr.record {
-	background: #EDEDED;
+tr.record{
+    background: #EDEDED;
 }

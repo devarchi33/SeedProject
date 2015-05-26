@@ -10,4 +10,7 @@ import com.skyfly33.shop.domain.Item;
 public interface ItemDao {
 
 	List<Item> itemListSelect();
+	
+	Item itemListSelectById(int item_id);
+	
 }
