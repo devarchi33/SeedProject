@@ -1,10 +1,12 @@
 package com.skyfly33.shop.web.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.skyfly33.shop.domain.User;
 import com.skyfly33.shop.persistence.mapper.UserDao;
 
+@Service
 public class UserCatalogImpl implements UserCatalog {
 
 	@Autowired
