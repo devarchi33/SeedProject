@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.skyfly33.shop.domain.Item;
-import com.skyfly33.shop.util.LoggingUtil;
+import com.skyfly33.shop.utils.LoggingUtil;
 import com.skyfly33.shop.web.service.Shop;
 
 /**

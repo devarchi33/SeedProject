@@ -1,4 +1,4 @@
-package com.skyfly33.shop.util;
+package com.skyfly33.shop.utils;
 
 import java.util.List;
 
