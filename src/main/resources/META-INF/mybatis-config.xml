@@ -14,6 +14,7 @@
 	
 	<typeAliases>
 		<typeAlias type="com.skyfly33.shop.domain.Item" alias="item" />	
+		<typeAlias type="com.skyfly33.shop.domain.User" alias="user" />	
 	</typeAliases>
 
 	<!-- typeHandlers>
@@ -26,6 +27,8 @@
 	<mappers>		
 		<!-- Item -->
 		<mapper resource="META-INF/mappers/ItemDao.xml"/>
+		<!-- User -->
+		<mapper resource="META-INF/mappers/UserDao.xml"/>
 	</mappers>
 
 </configuration>
